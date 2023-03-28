@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    display: flex;
+    background: skyblue;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+::selection {
+    color: aliceblue;
+    background-color: lightblue;
+}
+.form {
+    position: relative;
+    background: antiquewhite;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: -3px 3px 10px -5px black;
+    padding: 30px 30px;
+}
+.form h2 {
+    font-size: 30px;
+    font-weight: 700; 
+}
+.form p {
+    padding-bottom: 8px;
+}
+.form form {
+    margin: 8px 0;
+
+}
+.form form .profile-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    margin: 18px 30px;
+    background-color: azure;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('file:///C:/xampp/htdocs/Sign%20Up%203/images/user.png');
+    border: 4px solid skyblue;
+    border-radius: 50%;
+}
+.file-upload {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    border-radius: 50%;
+    border: 2px solid antiquewhite;
+    overflow: hidden;
+    background: linear-gradient(to bottom, skyblue,lightblue 50%);
+    background-size: 100% 200%;
+    font-size: 14px;
+    cursor: pointer;
+}
+#user {
+    width: 25px;
+    height: 25px;
+}
+form input[type="file"] {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    cursor: pointer;
+    padding: 20px;
+}
+form img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    pointer-events: none;
+    cursor: pointer;
+}
+.file-upload:hover {
+    background-position: 0 100%;
+}
+.form form .error-text {
+    display: none;
+    color: white;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 4px;
+    background: maroon;
+    border: 1px solid antiquewhite;
+    margin-bottom: 8px;
+}
+.form .grid-details {
+    display: flex;
+
+}
+.form .grid-details .input:first-child {
+    margin-right: 8px;
+    width: 100%;
+}
+.form .grid-details .input:last-child {
+    margin-left: 8px;
+    width: 100%;
+}
+.form form .input {
+    margin-bottom: 10px;
+}
+.form form .input input {
+    height: 40px;
+    width: 100%;
+    padding: 0 8px;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    outline: none;
+}
+.form form .input input:focus,
+.form form .input input:valid {
+    border: 2px solid aqua;
+    transition: .1s ease;
+    outline: none;
+}
+.form form input.button {
+    height: 45px;
+    border: none;
+    width: 100%;
+    background-color: aqua;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 13px;
+    border: 2px solid antiquewhite;
+}
+.form .link {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.form .link a {
+    color: aqua;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+.form .link a:hover {
+    text-decoration: underline;
+}

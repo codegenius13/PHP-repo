@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+h1 {
+    margin-left: 30px;
+}
+#houses {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px
+}
+#rooms {
+    display: block;
+    margin-bottom: 30px;
+}
+.label {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.bed {
+    width: 350px;
+    height: 420px;
+    border: 1px solid silver;
+    border-radius: 20px;
+}
+.bed-nil:nth-child(1) {
+    display: none;
+    width: 350px;
+    height: 420px;
+    border: 1px solid silver;
+    border-radius: 20px;
+}
+#bed-text {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+#bed-text p,h3 {
+    margin-bottom: 15px;
+    text-align: left;
+}
+#bed-text .icon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#bed-text .icon span {
+    display: flex;
+}
+.submit {
+    background-color: silver;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.submit:hover {
+    box-shadow: 0px 1px 3px 1px black;
+}
+.reserve {
+    background-color: maroon;
+    opacity: .5;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.sure {
+    background-color: grey;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#int {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+#icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: silver;
+}
+#reserve {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    color: black;
+    text-decoration: none;
+    background-color: silver;
+    padding: 20px;
+}
+/** Form Validation **/
+.form {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.377);
+}
+#resform {
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	width: 40vw;
+	padding: 20px;
+	background:#ECECEC;
+	border: 2px solid #ccc;
+}
+
+#resform h2, p {
+	text-align: center;
+}
+
+#confirmres {
+	text-align: center;
+}
+
+input, label {
+	display: block;
+	width: 20vw;
+	margin: auto;
+}
+
+input {
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+#confirmbtn {
+  display: inline-block;
+  padding: 6px 14px 6px;
+  margin-bottom: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #0077C8;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 95%);
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 95%);
+  background-image: -linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 95%);
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.05) 95%);
+  background-repeat: repeat-x;
+  border: 0;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);
+     -moz-box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);
+          box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);
+  -webkit-transition: 0.1s;
+     -moz-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}

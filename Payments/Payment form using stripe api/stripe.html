@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment with Stripe Api</title>
+</head>
+<body>
+    <h1>Paying with stripe</h1>
+    <form id="payment-form">
+        <label for="amount">Amount:</label>
+        <input type="text" name="amount" id="amount">
+        
+        <label for="card-number">Card Number:</label>
+        <input type="text" name="card-number" id="card-number">
+        
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="text" name="expiry-date" id="expiry-date">
+        
+        <label for="cvv">CVV:</label>
+        <input type="text" name="cvv" id="cvv">
+        
+        <button type="submit">Pay Now</button>
+      </form>
+    <script src="https://js.stripe.com/v3/"></script> 
+    <script src="stripe.js"></script>
+</body>
+</html>
